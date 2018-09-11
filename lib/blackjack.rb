@@ -59,4 +59,9 @@ def runner
 welcome
 output=initial_round
 new_draw=0
+until output>21
+new_draw=hit?(0)
+output=output+new_draw
+end
+end_game(output)
 end
