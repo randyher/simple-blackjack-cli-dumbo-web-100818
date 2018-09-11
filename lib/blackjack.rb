@@ -32,13 +32,11 @@ end
 
 def hit? (total)
   prompt_user
-  get_user_input
-  response=gets.chomp
-  if response=="h"
-  new_card=deal_card
-  card_total+=new_card
-  end
-  if response=="s"
+  response=get_user_input
+  while response!="h" && response!="s"
+  invalid_command
+  prompt_user 
+  response=get_user_input
   end
 end
 
