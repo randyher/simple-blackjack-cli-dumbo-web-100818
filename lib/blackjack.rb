@@ -56,7 +56,13 @@ end
 #####################################################
 
 def runner
-  welcome 
-  hit?(initial_round)
+welcome
+output=initial_round
+new_draw=0
+until output>21
+new_draw=hit?(0)
+output=output+new_draw
+puts output
 end
-    
+end_game(output)
+end
