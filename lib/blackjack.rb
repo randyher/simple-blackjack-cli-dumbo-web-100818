@@ -63,5 +63,5 @@ until output>21
 new_draw=hit?(0)
 output=output+new_draw
 end
-puts end_game(output)
+end_game(output)
 end
