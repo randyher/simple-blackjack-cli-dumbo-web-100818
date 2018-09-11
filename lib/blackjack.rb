@@ -38,6 +38,12 @@ def hit? (total)
   prompt_user 
   response=get_user_input
   end
+   if response=="h"
+  new_card=deal_card
+  total+=new_card
+  elsif response=="s"
+  total
+end
 end
 
 def invalid_command
